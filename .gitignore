@@ -33,3 +33,9 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+# dotenv
+.env
+.env.example
+.env.local
+.env.staging
