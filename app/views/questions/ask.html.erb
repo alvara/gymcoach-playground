@@ -1,0 +1,14 @@
+<h1>Chat</h1>
+
+<form action="/" method="get" class="" >
+<textarea type="text" class="form-control mb-3" name="question" placeholder="Ask a question here">
+</textarea>
+<input type="submit" value="Ask" class="btn btn-primary">
+</form>
+<% link_to 'New Question', root_path %>
+<hr>
+<% if @params[:question].present? %>
+  <div class="alert alert-info" role="alert">
+    <strong><%= @reply %></strong>
+  </div>
+<% end %>
